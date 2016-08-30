@@ -254,7 +254,7 @@ class Command(LabelCommand):
                         try:
                             row[column] = datetime(row[column])
                         except:
-                            row[column] = None
+                            row[column] = ''
                             loglist.append('Column %s failed' % field)
 
             if self.defaults:
